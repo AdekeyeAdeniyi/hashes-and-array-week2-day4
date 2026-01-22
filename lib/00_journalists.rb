@@ -2,28 +2,28 @@ twitter_accounts_handle=["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@mar
 
 # Twitter handle
 twitter_handles_count = twitter_accounts_handle.length
-# puts twitter_handles_count
+puts twitter_handles_count
 
 # shortest handle in this list
 short_handle = twitter_accounts_handle.min_by { |handle| handle.length }
-# puts short_handle
+puts short_handle
 
 # list of handles contain 5 characters excluding @
 valid_handle = twitter_accounts_handle.select { |handle|  handle.delete("@").length == 5}
-# puts valid_handle
+puts valid_handle
 
 # list of handle starting with a capital letter (first letter after the @)
 capitalized_handles_length = twitter_accounts_handle.count { |handle| handle[1] == handle[1].upcase }
-# puts capitalized_handles_length
+puts capitalized_handles_length
 
 # sorted list of handles in alphabetical order
 sorted_handle_list_order = twitter_accounts_handle.sort
-# puts sorted_handle_list_order
+puts sorted_handle_list_order
 
 # sorted list of handles by handle size (smallest first, largest last).
 sorted_handle_list_size = twitter_accounts_handle.sort_by {|handle| handle.length}
-# puts sorted_handle_list_size
+puts sorted_handle_list_size
 
 # position of the person in the array? @epenser
 handle_index_position = twitter_accounts_handle.index('@epenser')
-# puts handle_index_position
+puts handle_index_position
